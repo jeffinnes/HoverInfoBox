@@ -1,0 +1,30 @@
+.physical_server {
+  border: solid 2px black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(97, 198, 255);
+}
+
+.virtual_server_box {
+  /*border: solid 1px black;*/
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.virtual_server {
+  border: solid 1px black;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.vs_name {
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
