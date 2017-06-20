@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Hover Test</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="res/css/main.css">
+  <link rel="stylesheet" href="res/css/jquery-ui.min.css">
 </head>
 
 <body>
+
+  <!-- Servers -->
   <div class="physical_server server">
     <span class="ps_name">HOST01</span>
     <div class="virtual_server_box">
       <div class="virtual_server server">
-        <span class="vs_name">TUC-AV-01</span>
+        <span class="vs_name" id="opener">TUC-AV-01</span>
         <span>Lorem ipsum</span>
         <span>Dolor sit amet</span>
         <span>Consectetur adipisicing</span>
@@ -25,8 +28,19 @@
       </div>
     </div>
 
+    <!-- Dialog boxes containing each servers info -->
+    <div id="dialog" title="This info is great!">
+      <p>Manufacture year: 2000</p>
+      <p>OS: Server 2008</p>
+      <p>ROM: 200TB</p>
+    </div>
+
+    <!--Import Scripts Here-->
     <script src="res/js/jquery.js"></script>
-    <script src="res/js/main.js"></script>
+    <script src="res/js/jquery-ui.min.js"></script>
+    <script src="res/js/main.js">
+
+    </script>
 </body>
 
 </html>
