@@ -10,18 +10,22 @@
 </head>
 
 <body>
-
+  <header class="flex_box">
+    <span class="title">Server Specs</span>
+    <span>Hover over server to see more info</span>
+  </header>
+  <div class="main_container flex_box">
   <!-- Servers -->
-  <div class="physical_server server">
+  <div class="physical_server server flex_box">
     <span class="ps_name">HOST01</span>
-    <div class="virtual_server_box">
-      <div class="virtual_server server" id="av01">
+    <div class="virtual_server_box flex_box">
+      <div class="virtual_server server flex_box" id="av01">
         <span class="vs_name">TUC-AV-01</span>
         <span>Lorem ipsum</span>
         <span>Dolor sit amet</span>
         <span>Consectetur adipisicing</span>
       </div>
-      <div class="virtual_server server" id="dc10">
+      <div class="virtual_server server flex_box" id="dc10">
         <span class="vs_name">TUC-DC-10</span>
         <span>Lorem ipsum</span>
         <span>Dolor sit amet</span>
@@ -29,6 +33,7 @@
       </div>
     </div>
   </div>
+    </div>
 
     <!-- Dialog boxes containing each servers info -->
     <div id="TUC-AV-01" title="TUC-AV-01">
