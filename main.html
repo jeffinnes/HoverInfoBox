@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Hover Test</title>
+  <link rel="stylesheet" href="res/css/jquery-ui.css">
   <link rel="stylesheet" href="res/css/main.css">
-  <link rel="stylesheet" href="res/css/jquery-ui.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Days+One|Oxygen:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
@@ -14,25 +15,32 @@
   <div class="physical_server server">
     <span class="ps_name">HOST01</span>
     <div class="virtual_server_box">
-      <div class="virtual_server server">
-        <span class="vs_name" id="opener">TUC-AV-01</span>
+      <div class="virtual_server server" id="av01">
+        <span class="vs_name">TUC-AV-01</span>
         <span>Lorem ipsum</span>
         <span>Dolor sit amet</span>
         <span>Consectetur adipisicing</span>
       </div>
-      <div class="virtual_server server">
+      <div class="virtual_server server" id="dc10">
         <span class="vs_name">TUC-DC-10</span>
         <span>Lorem ipsum</span>
         <span>Dolor sit amet</span>
         <span>Consectetur adipisicing</span>
       </div>
     </div>
+  </div>
 
     <!-- Dialog boxes containing each servers info -->
-    <div id="dialog" title="This info is great!">
+    <div id="TUC-AV-01" title="TUC-AV-01">
       <p>Manufacture year: 2000</p>
       <p>OS: Server 2008</p>
       <p>ROM: 200TB</p>
+    </div>
+
+    <div id="TUC-DC-10" title="TUC-DC-10">
+      <p>Manufacture year: 3156</p>
+      <p>OS: Server 2012</p>
+      <p>ROM: 6GB</p>
     </div>
 
     <!--Import Scripts Here-->
